@@ -8,9 +8,11 @@ import java.time.Duration;
 public class BaseDriver {
     public static WebDriver driver;
 
-    //bunun sarti extends olmasi ve basta yer almasi
+    // bunun sarti extends olmasi ve basta yer almasi
+    // ilk burası çalışır extend olduğu yerde
     static
     {
+        KalanOncekileriKapat();
         driver = new ChromeDriver();
 
         driver.manage().window().maximize(); // Ekranı max yapıyor.
@@ -23,5 +25,14 @@ public class BaseDriver {
         MyFuc.Bekle(5);
         driver.quit();
     }
+
+    // hafızada kalmış, Selenium açtığı boştaki tarayıcıları temizler
+    public static void KalanOncekileriKapat() {
+        try {
+            Runtime.getRuntime().exec("taskkill /F /IM chromedriver.exe /T");
+        } catch (Exception ignored) {
+        }
+    }
+
 
 }
