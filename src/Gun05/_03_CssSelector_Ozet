@@ -1,0 +1,32 @@
+Css Selector
+div[id='message'][type='text']
+
+> : çocuklarda arama yapar
+  : tüm çocuklarda (cocuk+torun+hepsi) arar
++ : bitişik kardeş e gider
+~ : bütün bitişik kardeşlerde arar
+
+[id^='u_'] ->  ^ bununla(u_) başlayan
+[id$='u_'] ->  $ bununla(u_) biten
+[id*='u_'] ->  * içinde(u_) bu geçen
+
+[id='profile'] > :nth-child(3)  -> çocuklarından 3. ye git
+
+[id='form'] img    -> tüm alt elemanlardan img
+
+------------
+<div id="form">
+
+    <span id="m1"> merhaba 1 </span>
+    <span> merhaba 2 </span>  bitişik kardeşi
+
+    <div> -> çocuk
+       <img src=logo.png>
+       <input type="text">
+    </div>
+
+</div>
+
+[id='m1']+span ->  + bitişik kardeş
+[id='m1']+span+div
+[id='m1']~div  -> kardeşlerinden div
