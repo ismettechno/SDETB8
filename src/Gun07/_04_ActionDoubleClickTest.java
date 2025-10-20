@@ -22,5 +22,6 @@ public class _04_ActionDoubleClickTest extends BaseDriver {
         aksiyon.perform();
 
         //new Actions(driver).doubleClick(btnDblClick).build().perform();
+        BekleKapat();
     }
 }
