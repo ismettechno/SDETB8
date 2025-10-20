@@ -21,12 +21,12 @@ public class _03_ActionClickTest extends BaseDriver {
         //btnClickMe.click();
 
         Actions aksiyonlar=new Actions(driver); // web sayfası aksiyonlara açıldı.
-        Action aksyion= aksiyonlar.moveToElement(btnClickMe).click().build();
+        Action aksiyon= aksiyonlar.moveToElement(btnClickMe).click().build();
         // elementin üzerin click için git orda bekle.aksiyonu hazırla.
         System.out.println("Aksyion hazırlandı");
 
         MyFunc.Bekle(2);
-        aksyion.perform(); // aksiyon gerçekleşiyor. işleme al, uygula.
+        aksiyon.perform(); // aksiyon gerçekleşiyor. işleme al, uygula.
 
 //        //kısa hali
 //        aksiyonlar.moveToElement(btnClickMe).click().build().perform();  // çok aksiyon için
