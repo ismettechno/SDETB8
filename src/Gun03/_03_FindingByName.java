@@ -1,6 +1,6 @@
 package Gun03;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,7 @@ public class _03_FindingByName {
         WebElement soyad=driver.findElement(By.name("q8_name[last]"));
         soyad.sendKeys("temur");
 
-        MyFuc.Bekle(3);
+        MyFunc.Bekle(3);
         driver.quit();
     }
 }

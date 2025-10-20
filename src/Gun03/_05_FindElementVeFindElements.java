@@ -1,6 +1,6 @@
 package Gun03;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -25,7 +25,7 @@ public class _05_FindElementVeFindElements {
         // tek element olduğu halde, bazen çıkan bazen çıkmayan elementler için,
         // yine findelementS kullanılır, size ına bakılarak işlem yapılır veya devam edilir
         // böylece hata almadan işleme devam edilebilir
-        MyFuc.Bekle(3);
+        MyFunc.Bekle(3);
         driver.quit();
     }
 }

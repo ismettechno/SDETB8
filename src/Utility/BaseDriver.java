@@ -22,7 +22,7 @@ public class BaseDriver {
 
     public static void BekleKapat()
     {
-        MyFuc.Bekle(5);
+        MyFunc.Bekle(5);
         driver.quit();
     }
 

@@ -1,6 +1,6 @@
 package Gun04;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -19,7 +19,7 @@ public class _03_GetCssValue {
         System.out.println("element.getCssValue(font-family) = " + element.getCssValue("font-family"));
         System.out.println("element.getCssValue(min-height) = " + element.getCssValue("min-height"));
 
-        MyFuc.Bekle(5);
+        MyFunc.Bekle(5);
         driver.quit();
 
 

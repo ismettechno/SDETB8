@@ -1,6 +1,6 @@
 package Gun03;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -20,7 +20,7 @@ public class _02_FindingByIdNotFoundException {
             System.out.println("Web element bulunamadı : "+ ex.getMessage());
         }
 
-        MyFuc.Bekle(5);
+        MyFunc.Bekle(5);
         driver.quit();
     }
 }

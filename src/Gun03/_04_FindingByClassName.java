@@ -1,6 +1,6 @@
 package Gun03;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -24,7 +24,7 @@ public class _04_FindingByClassName {
         for (WebElement e: elementler)
             System.out.println("findElements:"+e.getText());
 
-        MyFuc.Bekle(3);
+        MyFunc.Bekle(3);
         driver.quit();
     }
 }

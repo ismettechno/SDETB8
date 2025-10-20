@@ -1,11 +1,8 @@
 package Gun04;
 
 import Utility.BaseDriver;
-import Utility.MyFuc;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class _04_Soru_V2 extends BaseDriver {
 

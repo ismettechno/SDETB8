@@ -1,6 +1,6 @@
 package Gun02;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
@@ -10,7 +10,7 @@ public class _01_OpeningWebsite {
 
         tarayici.get("https://www.google.com/");
 
-        MyFuc.Bekle(3);
+        MyFunc.Bekle(3);
         tarayici.quit();
     }
 }

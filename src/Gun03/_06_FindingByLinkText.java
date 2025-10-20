@@ -1,6 +1,6 @@
 package Gun03;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,7 +17,7 @@ public class _06_FindingByLinkText {
         WebElement link2=driver.findElement(By.partialLinkText("Süper Fiyat"));
         System.out.println("link2.getText() = " + link2.getText());
 
-        MyFuc.Bekle(3);
+        MyFunc.Bekle(3);
         driver.quit();
     }
 }

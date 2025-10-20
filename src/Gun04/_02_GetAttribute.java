@@ -1,12 +1,10 @@
 package Gun04;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-
-import java.util.List;
 
 public class _02_GetAttribute {
     public static void main(String[] args) {
@@ -20,7 +18,7 @@ public class _02_GetAttribute {
         System.out.println("element.getAttribute(id) = " + element.getAttribute("id"));
         System.out.println("element.getAttribute(style) = " + element.getAttribute("style"));
 
-        MyFuc.Bekle(5);
+        MyFunc.Bekle(5);
         driver.quit();
     }
 }

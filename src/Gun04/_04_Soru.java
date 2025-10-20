@@ -1,6 +1,6 @@
 package Gun04;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -35,7 +35,7 @@ public class _04_Soru {
             System.out.println("Failed!");
 
 
-        MyFuc.Bekle(5);
+        MyFunc.Bekle(5);
         driver.quit();
     }
 

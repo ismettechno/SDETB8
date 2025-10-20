@@ -1,7 +1,7 @@
 package Gun06;
 
 import Utility.BaseDriver;
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -30,23 +30,23 @@ public class _01_Soru extends BaseDriver {
 
         WebElement business=driver.findElement(By.cssSelector("input[type='radio'][value='Business']"));
         business.click();
-        MyFuc.Bekle(2);
+        MyFunc.Bekle(2);
 
         WebElement optionOnlineAdvertising=driver.findElement(By.cssSelector("option[value='Online Advertising']"));
         optionOnlineAdvertising.click();
-        MyFuc.Bekle(2);
+        MyFunc.Bekle(2);
 
         WebElement everyDayRadio=driver.findElement(By.cssSelector("input[type='radio'][value='Every Day']"));
         everyDayRadio.click();
-        MyFuc.Bekle(2);
+        MyFunc.Bekle(2);
 
         WebElement goodRadio=driver.findElement(By.cssSelector("input[type='radio'][value='Good']"));
         goodRadio.click();
-        MyFuc.Bekle(2);
+        MyFunc.Bekle(2);
 
         WebElement dropdownHowLong=driver.findElement(By.cssSelector("select[id$='_4597']>:nth-child(4)"));
         dropdownHowLong.click();
-        MyFuc.Bekle(2);
+        MyFunc.Bekle(2);
 
         goodRadio.click();
 

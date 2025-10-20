@@ -1,6 +1,6 @@
 package Utility;
 
-public class MyFuc {
+public class MyFunc {
 
     public static void Bekle(int sn)
     {

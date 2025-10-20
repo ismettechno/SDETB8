@@ -1,6 +1,6 @@
 package Gun03;
 
-import Utility.MyFuc;
+import Utility.MyFunc;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,11 +17,11 @@ public class _01_FindingById {
         WebElement isimKutusu = driver.findElement(By.id("first_8")); // first_8 id ile elemanı bul
         isimKutusu.sendKeys("İsmet");   // sendkeys: yazı gönder
 
-        MyFuc.Bekle(2);
+        MyFunc.Bekle(2);
         WebElement soyisimKutusu = driver.findElement(By.id("last_8")); // last_8 id ile elemanı bul
         soyisimKutusu.sendKeys("Temur");   // sendkeys: yazı gönder
 
-        MyFuc.Bekle(5);
+        MyFunc.Bekle(5);
         driver.quit(); // açılmış tarayıcıyı kapat, yani hafızadan sil
     }
 }
