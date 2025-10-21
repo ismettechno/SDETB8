@@ -33,6 +33,11 @@ public class _02_DragAndDropBy extends BaseDriver {
         aksiyonDriver.dragAndDropBy(sagSurgu, -100, 0).build().perform();
 
         BekleKapat();
+
+        // TODO : sol sürgü 200$ , sağ sürgüyü 400$ a getiriniz.
+        // int genislik= cubuk.getSize().width;  ->500
+        // sol sürgü için gitme miktarı    (genislik/500)*200
+        // bu sitede yaptıktan sonra medya markette : sol sürgü : 100.000 , sağ sürgü 300.000
     }
 
 
