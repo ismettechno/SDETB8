@@ -27,6 +27,7 @@ public class _01_Alertler extends BaseDriver {
 
     @Test
     public void Test2() {
+
         driver.get("https://www.selenium.dev/selenium/web/alerts.html");
         MyFunc.Bekle(2);
 
