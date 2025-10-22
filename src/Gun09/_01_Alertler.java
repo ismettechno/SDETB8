@@ -42,7 +42,7 @@ public class _01_Alertler extends BaseDriver {
         MyFunc.Bekle(2);
 
         new Actions(driver).scrollToElement(txtMesaj).build().perform();
-        MyFunc.Bekle(2);
+        MyFunc.Bekle(2); // txtMesaj elementine kadar sayfayı kaydırdı
 
         Assert.assertTrue("yazı bulunamadı", txtMesaj.getText().contains("ismet"));
 
@@ -51,7 +51,20 @@ public class _01_Alertler extends BaseDriver {
 
     @Test
     public void Test3() {
+        driver.get("https://www.selenium.dev/selenium/web/alerts.html");
+        MyFunc.Bekle(2);
 
+        WebElement clickMe=driver.findElement(By.id("prompt"));
+        clickMe.click();
+        MyFunc.Bekle(2);
+        //su anda alert-prompt çıkmış oldu
+
+        String baslik=driver.switchTo().alert().getText();
+        driver.switchTo().alert().accept();
+
+        System.out.println("baslik = " + baslik);
+
+        BekleKapat();
     }
 
 
