@@ -1,7 +1,6 @@
 package Gun09;
 
 import Utility.BaseDriver;
-import Utility.MyFunc;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -18,7 +17,7 @@ public class _07_Soru extends BaseDriver {
 
         //bana öyle bir bekletme lazım ki web sayfasından hebri olacak ve gerekitiği kadar bekleyecek
 
-        beklemeSuresi.until(ExpectedConditions.alertIsPresent());
+        bekle.until(ExpectedConditions.alertIsPresent());
         driver.switchTo().alert().accept();
 
         BekleKapat();
