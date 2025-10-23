@@ -22,6 +22,7 @@ public class _04_Scrollintro extends BaseDriver {
 
         js.executeScript("window.scrollTo(0,-200)"); // bulunduğu yerden 200 geri scroll
 
+
         BekleKapat();
     }
 }
