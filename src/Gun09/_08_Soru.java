@@ -6,6 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class _08_Soru extends BaseDriver {
 
@@ -38,6 +39,8 @@ public class _08_Soru extends BaseDriver {
             txtBox1.sendKeys(String.valueOf(sayi1));
             txtBox2.sendKeys(String.valueOf(sayi2));
             btnCalculate.click();
+
+            bekle.until(ExpectedConditions.visibilityOf(answerField));
 
             int olusanToplam = Integer.parseInt(answerField.getAttribute("value")); //oluşan değer value attribute da
             Assert.assertTrue("Toplam hatalı", beklenenSonuc == olusanToplam);
