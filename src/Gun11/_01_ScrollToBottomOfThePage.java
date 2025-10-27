@@ -17,7 +17,7 @@ public class _01_ScrollToBottomOfThePage extends BaseDriver {
         js.executeScript("window.scrollTo(0,document.body.scrollHeight)"); // en sona git
         MyFunc.Bekle(2);
 
-        js.executeScript("window.scrollTo(0,0)"); // an başa git
+        js.executeScript("window.scrollTo(0,0)"); // en başa git
         BekleKapat();
     }
 
