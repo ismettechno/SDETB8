@@ -27,7 +27,7 @@ public class BaseDriver {
     public static void BekleKapat()
     {
         MyFunc.Bekle(5);
-        driver.quit();
+        driver.quit();  // açılmış bütün tabları kapatır, tarayıcıyı kapatır
     }
 
     // hafızada kalmış, Selenium açtığı boştaki tarayıcıları temizler

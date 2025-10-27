@@ -20,7 +20,6 @@ public class _03_JavaScriptClick extends BaseDriver {
         js.executeScript("arguments[0].click();", ciftFrameLink);
         // içerden kod ile tıklatıldı
 
-
         BekleKapat();
     }
 }
