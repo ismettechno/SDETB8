@@ -35,6 +35,10 @@ public class _04_WindowsGiris extends BaseDriver {
         for (String id: windowIDler)
             System.out.println("id = " + id);
 
+        MyFunc.Bekle(2);
+        // bu noktada en son açılan link tabı aktif
+        // Peki ilk sayafa nasıl geçiş yaparım ?
+        driver.switchTo().window(anasayfaWindowID); // Ana sayafa geçiş yaptım
 
         BekleKapat();
     }
