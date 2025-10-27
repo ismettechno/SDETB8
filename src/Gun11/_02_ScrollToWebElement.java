@@ -22,7 +22,6 @@ public class _02_ScrollToWebElement extends BaseDriver {
         // true veya default olduğunda element sayfanın en üst tarafında görünecek duruma kadar kaydırır
         // false : element sayfanın aşağısında görürünür hale gelene kadra kaydırır.
 
-
         BekleKapat();
     }
 
