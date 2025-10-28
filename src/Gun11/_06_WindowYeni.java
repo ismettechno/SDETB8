@@ -17,8 +17,6 @@ public class _06_WindowYeni extends BaseDriver {
         //şu anda yeni boş sayfadayım
         driver.get("https://www.facebook.com/");
 
-
-
         BekleKapat();
     }
 
