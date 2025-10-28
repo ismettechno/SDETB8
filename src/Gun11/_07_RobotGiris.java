@@ -37,7 +37,6 @@ public class _07_RobotGiris extends BaseDriver {
         driver.switchTo().window(ikinciID);
         driver.get("https://www.facebook.com/");
 
-
        BekleKapat();
     }
 }
