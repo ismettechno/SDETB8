@@ -40,8 +40,8 @@ public class _02_EkranKaydet extends BaseDriver {
             // bu JAVA nın kendi içinde yok, bunun için yaz<ılmış kütüphaneye projeye eklememiz lazım.
             FileUtils.copyFile(hafizadaDosyaHalinde, new File("ekranGoruntuleri/screenshot.jpg"));
 
+            // TODO :  Öyle bir şey yapınki her ekran kaydı , AYRI AYRI kaydedilsin. 2025_03_26_13_56
         }
-
 
         BekleKapat();
     }
