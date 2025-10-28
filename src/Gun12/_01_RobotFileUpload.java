@@ -48,9 +48,7 @@ public class _01_RobotFileUpload extends BaseDriver {
         MyFunc.Bekle(2);
 
         WebElement dosyaSecildiMesaji=driver.findElement(By.cssSelector("div[class='file']+p"));
-
         Assert.assertTrue("Dosya seçilemedi", dosyaSecildiMesaji.getText().contains("test.txt"));
-
 
         BekleKapat();
     }
